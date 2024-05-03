@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available; /* Fallback for iOS */
+}
+
+.title_1{
+  @apply uppercase sm:text-[68px] text-[30px] text-[white] font-monument-extended sm:leading-[74.8px] leading-[40px];
+}
+.title_2{
+  @apply uppercase sm:text-[38px] text-[20px] text-[white] font-monument-extended sm:leading-[45.6px] leading-[30px];
+}
+
+.hero_gradient{
+  background: linear-gradient(-4deg, #000000 30.29%, #3D8BFF 47.39%, #AB23FF 95.05%);
+}
+  
+.text-gradient {
+  background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+  @apply text-transparent;
+  @apply bg-clip-text;
+}
+
+.border-gradient {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+}
+.__gradient{
+  background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+}
+
+.shadow {
+  box-shadow: inset 0px -8px 17px #000
+}
+
+.shadow-up{
+  box-shadow: inset 0 0 471px #000
+}
+.shadow-down{
+  box-shadow: inset 0 0 -471px #000
+}
+
+/* -------------------------------- ANIMATION ------------------------------- */
+.transition_700 {
+  transition: all 0.7s ease;
+}
+
+
+.closed {
+  max-height: 0;
+  opacity: 0;
+}
+
+.open {
+  opacity: 1;
+  max-height: 300px;
+}
